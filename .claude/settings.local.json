@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell($token = \"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\"; $headers = @{ Authorization = \"Bearer $token\"; Accept = \"application/vnd.github+json\" }; $repos = Invoke-RestMethod -Uri \"https://api.github.com/user/repos?per_page=50&type=all\" -Headers $headers; $repos | Select-Object name, html_url)",
+      "PowerShell(node -v)",
+      "PowerShell(npm -v)",
+      "PowerShell($base = \"c:\\\\Users\\\\lesli\\\\Documents\\\\Multiverse\\\\Founding Federation\\\\Shipping_Software_June1\\\\Dog_Dossier\"; Remove-Item \"$base\\\\index.html\",\"$base\\\\style.css\",\"$base\\\\script.js\" -Force -Confirm:$false; New-Item -ItemType Directory -Force -Path \"$base\\\\app\",\"$base\\\\lib\" | Out-Null; Get-ChildItem $base)"
+    ]
+  }
+}
