@@ -22,8 +22,8 @@ export default function Home() {
           <Image
             src="/wordmark.png"
             alt="Dog Dossier"
-            width={220}
-            height={56}
+            width={300}
+            height={72}
             className="object-contain"
             priority
           />
@@ -39,7 +39,7 @@ export default function Home() {
       </header>
 
       {/* Section 1: Hero */}
-      <section className="relative flex min-h-[540px] items-end overflow-hidden pb-16">
+      <section className="relative flex min-h-[700px] items-end overflow-hidden pb-16">
         <Image
           src="/hero-dog.jpg"
           alt="Dog sitting on a bridge"
