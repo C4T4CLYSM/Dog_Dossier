@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Script from "next/script";
 
 const pricingRows = [
@@ -18,9 +19,14 @@ export default function Home() {
     <>
       <header className="sticky top-0 z-50 bg-navy py-[18px]">
         <div className="mx-auto flex max-w-[1100px] items-center justify-between px-6">
-          <div className="font-sub text-2xl italic font-bold text-cream tracking-tight">
-            dog dossier
-          </div>
+          <Image
+            src="/wordmark.png"
+            alt="Dog Dossier"
+            width={180}
+            height={48}
+            className="object-contain"
+            priority
+          />
           <a
             href={STRIPE_LINK}
             target="_blank"
@@ -33,8 +39,16 @@ export default function Home() {
       </header>
 
       {/* Section 1: Hero */}
-      <section className="relative flex min-h-[420px] items-center bg-gradient-to-br from-navy to-slate">
-        <div className="mx-auto w-full max-w-[1100px] px-6">
+      <section className="relative flex min-h-[540px] items-end overflow-hidden pb-16">
+        <Image
+          src="/hero-dog.jpg"
+          alt="Dog sitting on a bridge"
+          fill
+          className="object-cover object-top"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy/75 via-navy/40 to-transparent" />
+        <div className="relative z-10 mx-auto w-full max-w-[1100px] px-6">
           <h1 className="font-heading text-[clamp(2.6rem,7vw,4.5rem)] font-black uppercase leading-[1.05] tracking-tight text-cream">
             Care that
             <br />
@@ -181,7 +195,13 @@ export default function Home() {
 
       <footer className="bg-navy px-6 py-7">
         <div className="mx-auto flex max-w-[1100px] flex-wrap items-center justify-between gap-3">
-          <span className="font-sub text-xl italic font-bold text-cream">dog dossier</span>
+          <Image
+            src="/wordmark.png"
+            alt="Dog Dossier"
+            width={150}
+            height={40}
+            className="object-contain"
+          />
           <span className="text-[0.82rem] text-cream/50">
             © 2026 Dog Dossier. Made with ❤️ for dogs everywhere.
           </span>
