@@ -22,8 +22,8 @@ export default function Home() {
           <Image
             src="/wordmark.png"
             alt="Dog Dossier"
-            width={180}
-            height={48}
+            width={220}
+            height={56}
             className="object-contain"
             priority
           />
@@ -44,7 +44,7 @@ export default function Home() {
           src="/hero-dog.jpg"
           alt="Dog sitting on a bridge"
           fill
-          className="object-cover object-top"
+          className="object-cover object-center"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-navy/75 via-navy/40 to-transparent" />
